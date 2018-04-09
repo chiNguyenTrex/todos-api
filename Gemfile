@@ -10,16 +10,13 @@ gem 'rails', '~> 5.1.6'
 gem 'sqlite3'
 gem 'puma', '~> 3.7'
 
-group :test do
+group :development, :test do
+  gem 'pry-byebug'
   gem 'rspec-rails', '~> 3.7'
   gem 'shoulda-matchers'
   gem "factory_bot_rails"
   gem 'faker'
   gem 'database_cleaner'
-end
-
-group :development, :test do
-  gem 'pry-byebug'
 end
 
 group :development do
