@@ -11,8 +11,8 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 
 group :test do
-  gem 'shoulda-matchers'
   gem 'rspec-rails', '~> 3.7'
+  gem 'shoulda-matchers'
   gem "factory_bot_rails"
   gem 'faker'
   gem 'database_cleaner'
