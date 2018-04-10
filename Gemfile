@@ -9,6 +9,8 @@ end
 gem 'rails', '~> 5.1.6'
 gem 'sqlite3'
 gem 'puma', '~> 3.7'
+gem 'bcrypt'
+gem 'jwt'
 
 group :development, :test do
   gem 'pry-byebug'

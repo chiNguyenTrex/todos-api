@@ -8,7 +8,7 @@ class TodosController < ApplicationController
   end
 
   def index
-    @todos = Todo.all
+    @todos = current_user.todos
     render json: @todos, status: :ok
   end
 
@@ -18,7 +18,7 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = Todo.create! todo_params
+    @todo = current_user.todos.create! todo_params
     render json: @todo, status: :created
   end
 
