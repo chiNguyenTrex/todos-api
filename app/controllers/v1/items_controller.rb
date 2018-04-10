@@ -1,4 +1,4 @@
-class ItemsController < ApplicationController
+class V1::ItemsController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound do |e|
     render json: e, status: :not_found
   end
