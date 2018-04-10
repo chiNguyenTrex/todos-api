@@ -1,5 +1,6 @@
 class TodosController < ApplicationController
   skip_before_action :authorize_request, only: :show
+
   rescue_from ActiveRecord::RecordNotFound do |e|
     render json: e, status: :not_found
   end
