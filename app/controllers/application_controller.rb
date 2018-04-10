@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+  include ActionController::Serialization
   include ExceptionHandler
 
   before_action :authorize_request

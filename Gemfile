@@ -11,6 +11,7 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 gem 'bcrypt'
 gem 'jwt'
+gem 'active_model_serializers'
 
 group :development, :test do
   gem 'pry-byebug'
