@@ -12,6 +12,7 @@ gem 'puma', '~> 3.7'
 gem 'bcrypt'
 gem 'jwt'
 gem 'active_model_serializers'
+gem 'kaminari'
 
 group :development, :test do
   gem 'pry-byebug'

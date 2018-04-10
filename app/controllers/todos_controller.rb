@@ -9,7 +9,7 @@ class TodosController < ApplicationController
   end
 
   def index
-    @todos = current_user.todos
+    @todos = current_user.todos.page(params[:page]).per 2
     render json: @todos, status: :ok
   end
 
